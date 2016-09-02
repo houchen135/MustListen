@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ImageNumView">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="69"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQh-na-eyM">
+                    <rect key="frame" x="5" y="4" width="35" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="63k-HR-YIG"/>
+                        <constraint firstAttribute="height" constant="50" id="udY-bs-gaN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wN-Ig-tq1">
+                    <rect key="frame" x="32" y="20" width="33" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="33" id="aaV-vb-tDc"/>
+                        <constraint firstAttribute="height" constant="32" id="ivV-dK-1uR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3wN-Ig-tq1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Glh-Sp-bHa"/>
+                <constraint firstItem="MQh-na-eyM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="NBX-yZ-tcv"/>
+                <constraint firstItem="MQh-na-eyM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="Ytf-b4-NRQ"/>
+                <constraint firstAttribute="trailing" secondItem="3wN-Ig-tq1" secondAttribute="trailing" constant="5" id="wyd-IT-4hc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="allNum" destination="3wN-Ig-tq1" id="9Gl-YP-KqA"/>
+                <outlet property="currentNum" destination="MQh-na-eyM" id="Vzj-GK-BQY"/>
+            </connections>
+            <point key="canvasLocation" x="333" y="392.5"/>
+        </view>
+    </objects>
+</document>

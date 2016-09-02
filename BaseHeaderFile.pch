@@ -1,0 +1,44 @@
+//
+//  BaseHeaderFile.pch
+//  MustListen
+//
+//  Created by 侯琛 on 16/8/1.
+//  Copyright © 2016年 MustListen. All rights reserved.
+//
+
+#ifndef BaseHeaderFile_pch
+#define BaseHeaderFile_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+
+#define VerifyNumberTime 2 //首页轮播自动滚动时间间隔
+#define WINDOW [[UIApplication sharedApplication].delegate window]   // 获得屏幕
+#define WIDTH(view) view.frame.size.width  // 获得视图的宽
+#define HEIGHT(view) view.frame.size.height  // 获得视图的高
+#define X(view) view.frame.origin.x  // 获得视图原点坐标-X
+#define Y(view) view.frame.origin.y  // 获得视图原点坐标-Y
+#define NavigationBarBtnTitleFont 14.0f
+#define NavigationBarBtnSizeWide  40
+#define NavigationBarBtnSizeHeight 40
+#define BaseTag 10000
+#define Color(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]//带有RGBA的颜色设置
+
+
+
+#pragma mark -----------网址字符串------------
+#define BaseUrl @"http://120.25.90.128"
+#define GetHomeData @"/appdata/brand/getHomePageData"   // 首页连接
+#define AllProductMessage @"/appdata/brand/getAllBrand"   // 所有品牌信息
+#define H5PageUrlMag @"/app/#/mag/"  // 根据id跳转H5页面---magazine
+#define H5PageUrlRecord @"/app/#/record/"   //   根据id跳转H5页面---record
+#define H5PageUrlProduct @"/app/#/product/"   //   根据id跳转H5页面---product
+#define ProductStoryMessageWithId @"/appdata/brand/getBrandById?id=" // 根据id获取品牌故事
+#define ProductStoryPicWithId @"/appdata/brand/getBrandPicByBrandName?id=" // 根据id回去对应品牌故事的图片集
+#define OtherProductStoryExcept @"/appdata/brand/getHomeThirdExcludeById?id="  // 除去id对应的品牌故事的另外的品牌故事
+
+
+#endif /* BaseHeaderFile_pch */
